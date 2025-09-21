@@ -18,6 +18,10 @@ export default function Home(){
                 className="cursor-pointer"
                 onClick={() => router.push('/sidebar')}
                 >Sidebar</li>
+                <li 
+                className="cursor-pointer"
+                onClick={() => router.push('/faq')}
+                >Faq</li>
             </ol>
         </div>
     );

@@ -57,10 +57,10 @@ function Card({ id, setCards }: { id: number; setCards: React.Dispatch<React.Set
 
         if (isMouseInside(info.point, deleteRef.current)) {
           setCards(prev => prev.filter(x => x !== id));
-            deleteRef.current.style.display = "none";
         } else {
           console.log("not deleted");
         }
+        deleteRef.current.style.display = "none";
       }}
     >
     </motion.div>
