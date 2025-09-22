@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';
+import styles from './style.module.css';
 
 export default function Main(){
     return(
@@ -33,7 +34,7 @@ function ExpandingCard({children=null} : {children?: React.ReactNode}){
             <AnimatePresence>
                 {expanded ? 
                         <motion.div 
-                        className="rounded-lg h-40 w-full bg-green-500"
+                        className={`${styles.scrollable} rounded-lg h-40 w-full bg-green-500`}
                         initial={{height: "0rem"}}
                         animate={{height: "10rem"}}
                         exit={{height: "0rem"}}

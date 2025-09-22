@@ -1,0 +1,12 @@
+.scrollable{
+    overflow-y: scroll;
+    position: relative;
+}
+.scrollable{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollable::-webkit-scrollbar{
+    display: none;
+}
