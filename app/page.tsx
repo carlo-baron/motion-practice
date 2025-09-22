@@ -26,6 +26,10 @@ export default function Home(){
                 className="cursor-pointer"
                 onClick={() => router.push('/gallery')}
                 >Gallery</li>
+                <li 
+                className="cursor-pointer"
+                onClick={() => router.push('/whack')}
+                >Whack A Mole</li>
             </ol>
         </div>
     );
