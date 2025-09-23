@@ -30,6 +30,10 @@ export default function Home(){
                 className="cursor-pointer"
                 onClick={() => router.push('/whack')}
                 >Whack A Mole</li>
+                <li 
+                className="cursor-pointer"
+                onClick={() => router.push('/memory')}
+                >Memory Game</li>
             </ol>
         </div>
     );

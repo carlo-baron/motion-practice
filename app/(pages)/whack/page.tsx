@@ -74,6 +74,12 @@ export default function WhackAMole() {
 
 function Mole({ coord, setScore, id, setMoles }: { coord: Coord; setScore: React.Dispatch<React.SetStateAction<number>>; id: number; setMoles: React.Dispatch<React.SetStateAction<Mole[]>>; }) {
   const { xPos, yPos } = coord;
+  useEffect(() => {
+    const interval = setInterval(() => {
+          setMoles(prev => prev.filter(mole => mole.id !== id));
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <motion.div
